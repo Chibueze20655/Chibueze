@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAL2</title>
+    <link rel="stylesheet" href="practice2.css">
+</head>
+<body>
+    <header id="head">
+        <div class="container">
+            <nav>
+                <div class="logo"><h1>Earth</h1></div>
+                <ul class="navlinks">
+                    <li class="nav-item active"><a href="practice2.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li class="nav-item active"><a href="contact.html">Contact</a></li>
+                </ul>
+                <img class="menu-btn" src="image/icons8-menu-50.png" alt="">
+            </nav>
+
+            <div class="header-content">
+                <h1>EARTH</h1>
+                <p>ENDLESS POTENTIAL</p>
+                <button class="primary-btn">EXPLORE</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="container">
+        <div class="service">
+            <img src="image/vertical-shot-road-going-through-beautiful-colorful-trees-captured-day-time_181624-8309.avif" alt="">
+            <h1>Web Design</h1>
+            <p>Custom web design for small businesses, we can help you capture new 
+                audiences and increase your sales.</p>
+        </div>
+        <div class="service">
+            <img src="image/vertical-shot-road-going-through-beautiful-colorful-trees-captured-day-time_181624-8309.avif" alt="">
+            <h1>Content Creation</h1>
+            <p>Custom web design for small businesses, we can help you capture new 
+                audiences and increase your sales.</p>
+        </div>
+        <div class="service">
+            <img src="image/vertical-shot-road-going-through-beautiful-colorful-trees-captured-day-time_181624-8309.avif" alt="">
+            <h1>Graphic Design</h1>
+            <p>Custom web design for small businesses, we can help you capture new 
+                audiences and increase your sales.</p>
+        </div>
+    </section>
+
+
+    <section id="about">
+      <div class="container">
+        <div class="about-content">
+            <h1>About Us</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Adipisci blanditiis perspiciatis, non voluptatum architecto sed corrupti ea expedita nostrum. Cum 
+                omnis unde sed voluptatum est in facilis maiores laboriosam animi.
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="image/vertical-shot-road-going-through-beautiful-colorful-trees-captured-day-time_181624-8309.avif" alt="">
+        </div>
+    </div>
+    </section>
+
+
+     <section id="talk-to-us">
+         <div class="talk-to-us-content">
+            <h1>Talk To Us</h1>
+            <p>
+                Have any questions, we are always open to talk about your business, new projects, creative opportunities,
+                and how we can help you
+            </p>
+            <button class="primary-btn">GET IN TOUCH</button>
+         </div>
+     </section>
+     
+
+     <footer>
+        <div class="container">
+        <ul class="footerlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="./contact.html">Contacts</a></li>
+        </ul>
+        <h1 class="logo">EARTH</h1>
+        <p>@2025 Earth. All right reserved.</p>
+        </div>
+     </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.navlinks');
+
+        menuBtn.addEventListener("click", function(){
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

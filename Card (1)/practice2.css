@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    overflow-x: hidden;
+}
+#head{
+    background: url(image/photorealistic-view-tree-nature-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+     width: 100vw; 
+    min-height: 90vh;
+}
+ a{
+    text-decoration: none;
+    color: inherit;
+} 
+.container{
+    max-width: 1200px;
+    padding: 0 8px;  
+    margin: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+}
+.navlinks{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 32px;
+    font-size: 18px;
+}
+nav .logo{
+    font-size: 20px;
+}
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    gap: 16px;
+}
+.header-content h1{
+    font-size: 60px;
+    color: green;
+    font-weight: 500;
+}
+.header-content p{
+    font-size: 40px;
+    color: green;
+}
+ .primary-btn{
+    padding: 10px 24px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 3s ease;
+}
+.primary-btn:hover{
+    background-color: rgb(9, 56, 9);
+}
+.menu-btn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: green;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    display: none;
+}
+
+
+#services{
+    display: flex;
+    margin-top: 120px;
+    gap: 36px;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+.service{
+    width: 300px;
+}
+.service p{
+    color: gray;
+}
+.service img{
+    max-width: 100%;
+}
+
+
+#about .container{
+   display: flex;
+   margin-top: 120px;
+   justify-content: space-between;
+}
+.about-content{
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-content h1{
+    font-style: italic;
+    font-size: 32px;
+    color: green;
+    text-transform: uppercase;
+}
+#about img{
+    max-width: 100%;
+}
+
+
+#talk-to-us{
+    background: url(image/cascade-boat-clean-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    margin-top: 120px;
+}
+.talk-to-us-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    height: 500px;
+}
+.talk-to-us-content h1{
+    color: rgb(9, 56, 9)
+}
+.talk-to-us-content p{
+    max-width: 500px;
+}
+
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8px;
+}
+.footerlinks{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    align-items: center;
+}
+footer .container .logo{
+    color: green;
+}
+
+
+
+/* contact page */
+#contact-head{
+    min-height: 400px;
+    background-image: url(image/photorealistic-view-tree-nature-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+#about-contact{
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 80px auto;
+    gap: 60px;
+}
+form{
+    flex-basis: 50%;
+}
+address{
+    flex-basis: 50%;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.input-wrapper input{
+    padding: 10px 16px;
+    border: 1px solid blue;
+    outline: none;
+    width: 100%;
+}
+
+.detailsWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 60px;
+}
+.detail{
+    display: flex;
+    gap: 10px;
+}
+.detail .fa-envelope,
+.detail .fa-phone,
+.detail .fa-location-dot{
+    width: 40px;
+    height: 40px;
+}
+.detail h6{
+    color: gray;
+}
+
+.followusWrapper{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.sociallink{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-top: 16px;
+}
+
+
+
+@media (max-width: 520px) {
+    #head{
+        min-height: 50vh;
+    }
+    .header-content h1{
+        font-size: 32px;
+    }
+    .header-content p{
+        font-size: 24px;
+    }
+    nav{
+        padding: 16px;
+    }
+    .navlinks{
+       position: absolute;
+       top: 0;
+       right: 0;
+       flex-direction: column;
+       background-color: white;
+       width: 80%;
+       height: 100%;
+       align-items: end;
+       padding-top: 80px;
+       margin-right: -900px;
+       transition: all 5s ease;
+    }
+    .navlinks.active{
+        margin-right: 0;
+    }
+    .navlinks li{
+        border-bottom: 1px solid green;
+        width: 100%;
+        padding: 8px 16px;
+        text-align: right;
+    }
+    .menu-btn{
+        display: block;
+    }
+
+    #about .container{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+
+    footer .container{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #about-contact{
+        flex-direction: column;
+    }
+    .input-wrapper{
+         margin-left: 0;
+    }
+}
